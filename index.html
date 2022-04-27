@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imtihon</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="text-center mb-5 mt-3 text-primary">
+            Pitsa buyurtma qilish
+        </h1>
+        <div class="pizza__open row">
+            <form class="form col-8" id="form" action="https://echo.htmlacademy.ru" method="GET">
+                
+                <div class="">
+                    
+                    <!-- =======Noni qanday bo'lsin?======= -->
+                    <div class="inner__head">
+                        <h2 class=" heading fw-bolder">Noni qanday bo'lsin?</h2> 
+                        <select id="id-select"></select>
+                    </div>
+                    
+                    <!-- =======Kattaligi======= -->
+                    <div class="inner__size mt-5 mb-5">
+                        <h2 class="heading__size fw-bolder">Kattaligi</h2>
+                        <ul class="ingredient__list d-flex"></ul>
+                    </div>
+                    
+                    <!-- =======Ustiga nima solaylik?======= -->
+                    <div class="inner__head">
+                        <h2 class=" heading fw-bolder">Ustiga nima solaylik?</h2>
+                        <ul class="decoration d-flex justify-content-between"></ul>
+                    </div>
+                    
+                    <!-- =======Qo'shimchalar======= -->
+                    <div class="inner__head mt-5">
+                        <h2 class=" heading fw-bolder">Qo'shimchalar</h2>
+                        <ul class="inner__list d-flex justify-content-between"></ul>
+                    </div>
+                    
+                </div>
+            </form> 
+
+            <div class="ordering col-4">
+            
+                <!-- =======Non======= -->
+                <div class="ordering__build ">
+                    <h2 class=" heading fw-bolder">Non:</h2>
+                    <span class="size__span"></span>
+                </div>
+                
+                <!-- =======Kattaligi======= -->
+                <div class="d-flex align-items-center mt-5">
+                    <h2 class=" heading fw-bolder">Kattaligi:</h2>
+                    <ul class="kattaligi"> </ul>
+                </div>
+                
+                <!-- =======Ustida======= -->
+                <div class="ordering__open  mt-3 mb-5">
+                    <h2 class=" heading fw-bolder">Ustida:</h2>
+                    <ul class="order__list"></ul>           
+                </div>
+                
+                <!-- =======Qo'shimcha======= -->
+                <div>
+                    <h2 class=" heading  fw-bolder">Qo'shimcha:</h2>
+                    <ul class="to__order d-flex justify-content-between"></ul>
+                </div>
+                
+                <!-- =======Qo'shimchalar======= -->
+                <button class="btn bg-danger "  type="submit" form="form">Buyurtma berish</button>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+<script src="./bootstrap/js/bootstrap.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
